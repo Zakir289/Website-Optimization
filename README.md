@@ -62,4 +62,9 @@ I am not a front end geek rather i am a pure back end developer, But here goes m
 So it all depends on whether you want a fast initial page load but don't expect the users to stay that long (then use server-side rendering) **or** it's not that important that the page loads fast (as in Gmail) but users will navigate around for a long time (then use client-side rendering).	
 
 
+##### If we go through few major sites and check which one they took among client and server,
+For websites that blend static, navigable content and app-like interactivity (or for companies that seek to provide an added measure of sanity for their engineers and designers), this divide becomes a huge pain.  This is why **Google Plus** does all rendering on the client.  **Quora** cleverly does almost all rendering on the server (including when you, say, click a "Follow" button), but only the updated parts are sent to the client.  (Particular widgets like the editor and "Promote" slider that provide instant feedback are clearly client-side.)  In an effort to increase responsiveness and flexibility, many sites now render **Ruby templates on the server and Backbone templates on the client** for different parts of the same user interface. 
+
+
+
 
