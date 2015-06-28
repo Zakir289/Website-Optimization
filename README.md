@@ -1,5 +1,116 @@
 ### Website optimization Technique
 
+Basically I am Back end developer, But for the last few months I was working more with front end. These are few of my experiences that i come across
+
+**Performace of a site mostly depends on**
+
+- while hitting the DB(Nearly 80% of the time)
+- loading the images on the browser,
+- loading external libraries
+- Not using the proxy servers when required.....
+
+Back end code execution will have a minor effect on the performance of a page. Ruby  is so popular even though the execution time for Ruby is more when compared with Java.
+
+
+
+**The main aim of every site/tool is to fascinate the User/Customer to come to their site repeatedly:**
+
+#### 1. Prioritize the visible content 
+- User/Customer prefer to visit sites which loads faster, i.e responsive
+
+
+- Every day we come across many websites, Websites that load faster are as large as sites that loads slower But they had just prioritize the fold content so that site appears Responsive.
+
+
+- If we hit any url of top ecommerce sites the content above the fold will load so fast and then render the content below the fold.
+
+
+- By using inline js and css upto that particular content that is visible to the user will make the site load faster. 
+
+
+- We prefer to load the CSS for a page at the starting of the page so that we can avoid redrawing of the elements, But for the home page Loading CSS next to the fold content will reduce the delay time of showing the home page to the user. I came across few tools which loads CSS for **ATF(After the fold)**
+
+#### 2. Image Optimization
+	
+- Loading the Images will takes more than 80% of the website rendering time.
+
+
+- It will be nice, if we can eleminate unnecessery images from the site.
+
+
+- Now It's time to compress the image(preferably lossless). There are many tools which will compress the image.
+
+
+- Serve the images from **CDN**. Content delivery networks will serve the data based on the user location. If the user is in Australia the data will be served from the server close to that location. The data loads faster if the data is served from different servers, So loading images from CDN will allow the browser to load the data parallely.
+
+
+
+#### 3. Compression
+
+- When user hits an url, Next to DNS lookup the website waits for the server to provide the requested files.
+
+
+- As the size of the file is more, the time taken to load the file is also more
+
+
+- Tools like Gzip will compress the data before sending to the browser, This will save the time, bandwidth,...
+
+
+
+#### 4. Page Size and HTML Complexity
+
+- Page size plays a crucial role in web page performace and it should be as low as possible.
+
+
+- Unnecessery nesting of HTML elements should be avoided to reduce the HTML complexity
+
+
+- Custom elements should be avoided if it can be achieved by HTML standard tags.
+
+
+- Large no of Dom elements leads to slow processing of elements
+
+
+#### 5.Caching static resources
+
+- Loading the resources/data from the server for and every visit is expensive and increases the traffic and wastage of user bandwidth
+
+
+- If there is delay in the response from the server, It blocks the page rendering
+
+
+- If we can cache the static resources on the browser it can used in subsequent visits
+
+
+
+#### 6. Lazy loading
+
+- There wil be large no of images in a web page but all of them won't be on the view port. No need to load the images which are not on the view port rather we can load them when the user scroll's the page.
+
+- you can find few jquery plugins which provide this feature
+
+- Plugins on specific events take value of data-original and put in src , i.e when image will load.(ex: <img class="lazy" data-original="img/example.jpg/>")
+
+
+
+To test the page speed and few other userful links
+
+Pagespeed Insights by Google.
+
+- https://developers.google.com/speed/pagespeed/
+- YSlow by Yahoo. 
+- https://developer.yahoo.com/yslow/
+- Other Useful sites
+- http://www.webpagetest.org/
+- http://www.woorank.com/
+- http://gtmetrix.com/
+
+
+
+
+
+
+
 
 ##### 1. Client side rendering v/s Server side Rendering in terms of performace?
 
