@@ -1,6 +1,7 @@
-### Website optimization Techniques
+### Website optimization Technique
 
- ##### 1. Client side rendering v/s Server side Rendering in terms of performace?
+
+##### 1. Client side rendering v/s Server side Rendering in terms of performace?
 
 The Main focus of the question is where to generate the HTML views, Whether to generate at client side or server side?
 
